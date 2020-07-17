@@ -1,0 +1,133 @@
+<!doctype html>
+<head lang="pt-br">
+    <meta charset="utf-8">
+    <title>Usuários</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+  
+   
+</head>
+<body >
+  <button type="button" class="card-link btn btn-info" id="btnCriar" data-taggle="modal" data-target="#modalCriar"> Criar</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NOME</th>
+        <th scope="col">IDADE</th>
+        <th>OPÇÕES</th>
+       </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1</td> 
+        <td>Fabiano</td> 
+        <td>23</td> 
+        <td>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="editark" id="editark">Editar</button>
+        <button type="button" class="btn btn-danger">Excluir</button>
+      </td>
+      </tr> 
+      <tr> 
+        <td>2</td> 
+        <td> Israel</td> 
+        <td>25</td> 
+        <td>
+          <button type="button" class="btn btn-success">Editar</button>
+          <button type="button" class="btn btn-danger">Excluir</button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Maria</td>
+        <td>32</td>
+        <td>
+          <button type="button" class="btn btn-success">Editar</button>
+          <button type="button" class="btn btn-danger">Excluir</button>
+        </td>
+      </tr>
+
+
+    </tbody>
+    </table>
+   
+<!-- Modal -->
+<div class="modal fade" id="modalCriar" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="exemple">Novo Usuário</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="btn btn-danger" aria-hidden="true" >X</span>
+        </button>
+        
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="col">
+            <div class="col">
+              <label form="inputnew">Nome</label>
+           <input type="text" name="camponome" id="inputnovo" class="form-control"  placeholder="Usuário">
+            </div>
+            <div class="col">
+              <label for="inputidade">Idade</label>
+             <input type="text"  class="form-control" id="inputidadenew" placeholder="Idade"> 
+            
+            </div>
+          </div>
+        </form>
+      </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+       <button  type="button" id="btnsav" class="btn btn-success">Salvar</button>  
+       <div id="res"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="edit" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Editar</h5>
+        <button type="button" class="close"  data-dismiss="modal" aria-label="Close">
+          <span class="btn btn-danger">X</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="col">
+            <div class="col">
+              <label form="inputnome">Nome</label>
+              <input type="text" name="entrada" id="editres" class="form-control" id="inputnome" placeholder="Usuário">
+              </div>
+            <div class="col">
+              <label for="inputidade">Idade</label>
+              <input type="text" class="form-control" id="editidade" placeholder="Idade">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        <button type="button" id="editsav" class="btn btn-success">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <script src="js.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
